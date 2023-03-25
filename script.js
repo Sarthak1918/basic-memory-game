@@ -20,16 +20,19 @@ function startCountDown() {
   }
 }
 
+const cards = document.querySelectorAll(".item");
+
 function resetGame() {
   countDownStarted = false;
   gameEnded = false;
   document.getElementById("timer").innerHTML = "00:00";
-  cards.classList.remove("shake");
-  cards.classList.remove("clicked");
-  cards.classList.remove("correct");
+  cards.forEach((e)=>{
+    e.classList.remove("clicked")
+    e.classList.remove("correct")
+    e.classList.remove("shake")
+  })
 }
 
-const cards = document.querySelectorAll(".item");
 cards.forEach((card) => {
   card.addEventListener("click", function () {
     if (gameEnded) {
