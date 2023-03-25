@@ -36,6 +36,7 @@ body{
     width: 100px;
     border-radius: 15px;
     transition: 0.5s all ease;
+    cursor: pointer;
 }
 
 .item img{
@@ -44,6 +45,7 @@ body{
     transition: 0.5s all ease;
 
 }
+
 
 
 .item:hover{
@@ -120,4 +122,5 @@ body{
     height: 40px;
     width: 100px;
     background-color: rgb(255, 191, 28);
+    cursor: pointer;
   }
