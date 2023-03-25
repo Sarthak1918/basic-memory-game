@@ -24,6 +24,9 @@ function resetGame() {
   countDownStarted = false;
   gameEnded = false;
   document.getElementById("timer").innerHTML = "00:00";
+  cards.classList.remove("shake");
+  cards.classList.remove("clicked");
+  cards.classList.remove("correct");
 }
 
 const cards = document.querySelectorAll(".item");
