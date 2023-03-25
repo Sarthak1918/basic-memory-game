@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Memory Game</h1>
+    <div id="timer">00:00</div>
+    <div class="container">
+      <div animal="butterfly" class="item">
+        <img src="./images/butterfly.png" alt="butterfly image" />
+      </div>
+      <div animal="ant" class="item">
+        <img src="./images/ant.png" alt="ant image" />
+      </div>
+      <div animal="frog" class="item">
+        <img src="./images/frog.png" alt="frog image" />
+      </div>
+      <div animal="lion" class="item">
+        <img src="./images/lion.png" alt="lion image" />
+      </div>
+      <div animal="piranha" class="item">
+        <img src="./images/piranha.png" alt="piranha image" />
+      </div>
+      <div animal="tiger" class="item">
+        <img src="./images/tiger.png" alt="tiger image" />
+      </div>
+      <div animal="ant" class="item">
+        <img src="./images/ant.png" alt="ant image" />
+      </div>
+      <div animal="frog" class="item">
+        <img src="./images/frog.png" alt="frog image" />
+      </div>
+      <div animal="butterfly" class="item">
+        <img src="./images/butterfly.png" alt="butterfly image" />
+      </div>
+      <div animal="tiger" class="item">
+        <img src="./images/tiger.png" alt="tiger image" />
+      </div>
+      <div animal="lion" class="item">
+        <img src="./images/lion.png" alt="lion image" />
+      </div>
+      <div animal="piranha" class="item">
+        <img src="./images/piranha.png" alt="piranha image" />
+      </div>
+    </div>
+
+    <div id="result" style="display: none">
+      <center>
+        <h2>Congratulations!! You Won...</h2>
+        <div>
+          <button onclick="resetGame()" id="reset-btn">Reset</button>
+        </div>
+      </center>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
