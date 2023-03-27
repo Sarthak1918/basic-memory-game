@@ -30,6 +30,7 @@ function resetGame() {
     e.classList.remove("clicked")
     e.classList.remove("correct")
     e.classList.remove("shake")
+    e.classList.remove("non-clickable")
   })
 }
 
@@ -46,6 +47,7 @@ cards.forEach((card) => {
     }
     if (count === 0) {
       firstSelection = card.getAttribute("animal");
+      card.classList.add("non-clickable")
       count++;
     } else {
       secondSelection = card.getAttribute("animal");
@@ -58,8 +60,13 @@ cards.forEach((card) => {
         correctCards[0].classList.remove("clicked");
         correctCards[1].classList.add("correct");
         correctCards[1].classList.remove("clicked");
+        correctCards[0].classList.add("non-clickable");
+        correctCards[1].classList.add("non-clickable");
       } else {
         let WrongCards = document.querySelectorAll(".clicked");
+        WrongCards[0].classList.remove("non-clickable");
+        WrongCards[1].classList.remove("non-clickable");
+
         WrongCards[0].classList.add("shake");
         WrongCards[1].classList.add("shake");
 

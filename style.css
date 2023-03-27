@@ -68,6 +68,10 @@ body{
     opacity: 1;
 }
 
+.non-clickable{
+  pointer-events: none;
+}
+
 .shake{
     background-color: rgb(241,95,95);
     animation: shake 0.5s;
