@@ -61,7 +61,7 @@ function addPopper() {
   document.getElementById("popper").innerHTML = `<lottie-player src="https://assets8.lottiefiles.com/packages/lf20_C51Bca6c0m.json" background="transparent" speed="1" style="width: 100vw; height: 100vh;" autoplay></lottie-player>`;
   setTimeout(() => {
     document.getElementById("popper").innerHTML = "";
-  }, 5000);
+  }, 4000);
 }
 
 
