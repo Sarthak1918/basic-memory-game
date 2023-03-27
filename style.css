@@ -67,7 +67,7 @@ body {
 
 
 
-.item:hover {
+.item:hover{
   transform: scale(1.1);
 }
 
